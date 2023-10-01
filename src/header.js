@@ -4,18 +4,19 @@ function header() {
 
     const title = document.createElement('h1');
     title.textContent = 'Restuarang';
-    header.appendChild(title);
 
     const btnContainer = document.createElement('div');
     const homeBtn = createHeaderBtn('Home');
     const menuBtn = createHeaderBtn('Menu');
     const contactBtn = createHeaderBtn('Contact');
 
+    header.appendChild(title);
     btnContainer.appendChild(homeBtn);
     btnContainer.appendChild(menuBtn);
     btnContainer.appendChild(contactBtn);
 
     header.appendChild(btnContainer);
+    document.getElementById('content').appendChild(header);
 }
 
 function toggleActiveTab(tab) {
