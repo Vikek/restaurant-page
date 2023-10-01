@@ -1,4 +1,4 @@
-function home() {
+function createHome() {
     const home  = document.createElement('div');
     home.classList.add('home');
 
@@ -50,4 +50,4 @@ function addWeekDays(info) {
     return day;
 }
 
-export default home;
+export default createHome;

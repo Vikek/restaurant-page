@@ -1,5 +1,7 @@
-import header from "./header";
-import home from "./homeContent";
+import createHeader from "./header";
+import createHome from "./homeContent";
+import createMenu from "./menuContent";
 
-header();
-home();
+createHeader();
+createHome();
+createMenu();

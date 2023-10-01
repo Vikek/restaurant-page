@@ -1,4 +1,4 @@
-function header() {
+function createHeader() {
     const header = document.createElement('div');
     header.classList.add('header');
 
@@ -35,4 +35,4 @@ function createHeaderBtn(btnTextContent) {
     return btn;
 }
 
-export default header;
+export default createHeader;
