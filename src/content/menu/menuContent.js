@@ -1,5 +1,6 @@
 function createMenu() {
     const menu = document.createElement('div');
+    menu.classList.add('menu');
 
     const lasagna = createMenuItem('Lasagna', 'A rich and creamy whole-wheat pasta dish filled layer by layer with refreshingly fresh onions and garlic, lathered in a succulent sauce and topped with imported, premium quality mozzarella', '15$');
 
@@ -8,7 +9,7 @@ function createMenu() {
     menu.appendChild(lasagna);
     menu.appendChild(pancakes);
 
-    document.getElementById('content').appendChild(menu);
+    return menu;
 }
 
 function createMenuItem(titleContent, descriptionContent, priceContent) {

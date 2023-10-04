@@ -1,5 +1,6 @@
 function createContact() {
     const contact = document.createElement('div');
+    contact.classList.add('contact');
 
     const contactInfo = createContactInfo(
         '123 Forest Drive, Forestville, Maine',
@@ -9,7 +10,7 @@ function createContact() {
 
     contact.appendChild(contactInfo);
 
-    document.getElementById('content').appendChild(contact);
+    return contact;
 }
 
 function createContactInfo(adressContent, emailContent, teleNumberContent) {

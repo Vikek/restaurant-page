@@ -1,3 +1,5 @@
+import './header.css';
+
 function createHeader() {
     const header = document.createElement('div');
     header.classList.add('header');
@@ -16,7 +18,7 @@ function createHeader() {
     btnContainer.appendChild(contactBtn);
 
     header.appendChild(btnContainer);
-    document.getElementById('content').appendChild(header);
+    return header;
 }
 
 function toggleActiveTab(tab) {

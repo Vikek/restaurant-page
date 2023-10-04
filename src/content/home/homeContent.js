@@ -40,7 +40,7 @@ function createHome() {
     home.appendChild(openHours);
     home.appendChild(location);
 
-    document.getElementById('content').appendChild(home);
+    return home;
 }
 
 function addWeekDays(info) {
