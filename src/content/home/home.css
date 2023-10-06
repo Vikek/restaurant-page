@@ -3,5 +3,20 @@
 }
 
 .home.active {
-    display: block;
+    display: grid;
+}
+
+.home.active > div {
+    display: grid;
+    gap: 10px;
+    margin: 14px;
+    border-bottom: solid rgba(200, 200, 200, 0.5) 2px;
+}
+
+.home.active > div > :last-child {
+    margin-bottom: 40px;
+}
+
+.home.active > div:last-child {
+    border: none;
 }

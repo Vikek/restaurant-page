@@ -1,3 +1,9 @@
+:root {
+    --main-background-color: #e2e8f0;
+    --tab-background-color: #f1f5f9;
+    --header-background-color: #1e293b;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +15,8 @@ html, body {
 
 #content {
     height: 100%;
-    background-color: #f1f5f9;
+    background-color: var(--main-background-color);
+    font-family: 'Courier New', Courier, monospace;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 3fr;
@@ -18,4 +25,5 @@ html, body {
 main {
     grid-row: 2 / -1;
     grid-column: 2 / 3;
+    background-color: var(--tab-background-color);
 }

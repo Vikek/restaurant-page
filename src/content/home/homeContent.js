@@ -3,6 +3,7 @@ import './home.css';
 function createHome() {
     const home  = document.createElement('div');
     home.classList.add('home');
+    home.classList.add('active'); //active tab when website loads in
     home.id = 'home';
 
     const description = document.createElement('div');

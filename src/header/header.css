@@ -1,5 +1,5 @@
 .header {
-    background-color: #1e293b;
+    background-color: var(--header-background-color);
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     display: grid;
@@ -16,14 +16,20 @@
     display: flex;
     justify-content: center;
     align-self: flex-end;
-    gap: 5px;
+    gap: 8px;
 }
 
 .header .btn-container button {
     border: none;
     height: 60px;
     width: 120px;
+    background-color: var(--main-background-color);
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: inherit;
+}
+
+.header .btn-container button.active {
+    background-color: var(--tab-background-color);
 }

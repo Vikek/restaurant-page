@@ -10,7 +10,10 @@ function createHeader() {
 
     const btnContainer = document.createElement('div');
     btnContainer.classList.add('btn-container');
+
     const homeBtn = createHeaderBtn('Home');
+    homeBtn.classList.add('active'); // home btn active by default
+
     const menuBtn = createHeaderBtn('Menu');
     const contactBtn = createHeaderBtn('Contact');
 
@@ -23,11 +26,16 @@ function createHeader() {
     return header;
 }
 
-function toggleActiveTab(tabId) {
-    const contentTabs = document.querySelectorAll('.content-tabs > div');
-    contentTabs.forEach((contentTab) => contentTab.classList.remove('active'));
+function onClickHandler(btnId, tabId) {
+    toggleActiveTab('.content-tabs > div', tabId); //toggle active on page
+    toggleActiveTab('.btn-container > button', btnId); //toggle active on buttons
+}
 
-    document.getElementById(tabId).classList.add('active');
+function toggleActiveTab(selector, id) {
+    const tabs = document.querySelectorAll(selector);
+    tabs.forEach((tab) => tab.classList.remove('active'));
+
+    document.getElementById(id).classList.add('active');
 }
 
 function createHeaderBtn(btnTextContent) {
@@ -35,7 +43,7 @@ function createHeaderBtn(btnTextContent) {
     const tabId = btnTextContent.toLowerCase();
     btn.textContent = btnTextContent;
     btn.id = `btn-${tabId}`;
-    btn.addEventListener('click', () => toggleActiveTab(tabId));
+    btn.addEventListener('click', () => onClickHandler(btn.id ,tabId));
 
     return btn;
 }
