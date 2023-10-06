@@ -1,0 +1,29 @@
+.header {
+    background-color: #1e293b;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    display: grid;
+    justify-content: center;
+}
+
+.header .title {
+    color: #cbd5e1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header .btn-container {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    gap: 5px;
+}
+
+.header .btn-container button {
+    border: none;
+    height: 60px;
+    width: 120px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    font-size: 16px;
+}

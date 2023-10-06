@@ -8,6 +8,7 @@ const Website =(() => {
     const content = document.getElementById('content');
 
     const main = document.createElement('main');
+    main.classList.add('content-tabs');
 
     const header = createHeader();
     const home = createHome();

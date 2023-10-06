@@ -5,9 +5,11 @@ function createHeader() {
     header.classList.add('header');
 
     const title = document.createElement('h1');
+    title.classList.add('title');
     title.textContent = 'Restuarang';
 
     const btnContainer = document.createElement('div');
+    btnContainer.classList.add('btn-container');
     const homeBtn = createHeaderBtn('Home');
     const menuBtn = createHeaderBtn('Menu');
     const contactBtn = createHeaderBtn('Contact');
@@ -22,7 +24,7 @@ function createHeader() {
 }
 
 function toggleActiveTab(tab) {
-    const contentTabs = document.querySelectorAll('.content-tabs div');
+    const contentTabs = document.querySelectorAll('content-tabs div');
     contentTabs.forEach((contentTab) => contentTab.classList.remove('active'));
 
     tab.classList.add('active');
