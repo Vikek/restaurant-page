@@ -23,18 +23,19 @@ function createHeader() {
     return header;
 }
 
-function toggleActiveTab(tab) {
-    const contentTabs = document.querySelectorAll('content-tabs div');
+function toggleActiveTab(tabId) {
+    const contentTabs = document.querySelectorAll('.content-tabs > div');
     contentTabs.forEach((contentTab) => contentTab.classList.remove('active'));
 
-    tab.classList.add('active');
+    document.getElementById(tabId).classList.add('active');
 }
 
 function createHeaderBtn(btnTextContent) {
     const btn = document.createElement('button');
+    const tabId = btnTextContent.toLowerCase();
     btn.textContent = btnTextContent;
-    btn.id = `btn-${btnTextContent}`;
-    btn.onclick = toggleActiveTab(btn);
+    btn.id = `btn-${tabId}`;
+    btn.addEventListener('click', () => toggleActiveTab(tabId));
 
     return btn;
 }

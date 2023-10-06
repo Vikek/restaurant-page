@@ -1,0 +1,7 @@
+.home {
+    display: none;
+}
+
+.home.active {
+    display: block;
+}

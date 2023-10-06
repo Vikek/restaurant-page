@@ -1,6 +1,9 @@
+import './contact.css';
+
 function createContact() {
     const contact = document.createElement('div');
     contact.classList.add('contact');
+    contact.id = 'contact';
 
     const contactInfo = createContactInfo(
         '123 Forest Drive, Forestville, Maine',

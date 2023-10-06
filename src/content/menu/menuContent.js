@@ -1,6 +1,9 @@
+import './menu.css';
+
 function createMenu() {
     const menu = document.createElement('div');
     menu.classList.add('menu');
+    menu.id = 'menu';
 
     const lasagna = createMenuItem('Lasagna', 'A rich and creamy whole-wheat pasta dish filled layer by layer with refreshingly fresh onions and garlic, lathered in a succulent sauce and topped with imported, premium quality mozzarella', '15$');
 
