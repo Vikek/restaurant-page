@@ -5,3 +5,35 @@
 .contact.active {
     display: block;
 }
+
+.contact.active > div {
+    display: grid;
+    gap: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact.active > div > div {
+    border-bottom: solid rgba(200, 200, 200, 0.5) 2px;
+}
+
+.contact.active > div > div :last-child {
+    margin-bottom: 30px;
+}
+
+.contact.active > div > div:last-child {
+    border: none;
+}
+
+.tele-number-container, .adress-container, .email-container {
+    display: flex;
+    gap: 8px;
+}
+
+.contact.active svg {
+    height: 20px;
+    width: 20px;
+    fill: var(--svg-icons);
+    position: relative;
+    bottom: 2px;
+}
