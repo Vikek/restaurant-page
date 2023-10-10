@@ -8,13 +8,17 @@
 
 .contact.active > div {
     display: grid;
-    gap: 30px;
-    margin: 10px;
-    padding: 10px;
+    gap: 10px;
 }
 
 .contact.active > div > div {
     border-bottom: solid rgba(200, 200, 200, 0.5) 2px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact.active >div:first-child {
+    margin-top: 20px;
 }
 
 .contact.active > div > div :last-child {
