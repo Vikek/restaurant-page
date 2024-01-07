@@ -30,6 +30,11 @@
     font-family: inherit;
 }
 
+.header .btn-container button:hover {
+    background-color: var(--tab-background-color);
+    cursor: pointer;
+}
+
 .header .btn-container button.active {
     background-color: var(--tab-background-color);
 }

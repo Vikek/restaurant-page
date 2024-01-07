@@ -6,7 +6,7 @@ function createHeader() {
 
     const title = document.createElement('h1');
     title.classList.add('title');
-    title.textContent = 'Restuarang';
+    title.textContent = 'Restaurant';
 
     const btnContainer = document.createElement('div');
     btnContainer.classList.add('btn-container');
